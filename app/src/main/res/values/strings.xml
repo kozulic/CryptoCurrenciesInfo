@@ -1,0 +1,17 @@
+<resources>
+    <string name="name_for_layout">Crypto Info</string>
+    <string name="app_name">Cryptocurrencies Info</string>
+
+    <string name="c_mc">Market Cap</string>
+    <string name="c_as">Av. Supply</string>
+    <string name="c_ms">Max Supply</string>
+    <string name="c_v">Volume 24h</string>
+    <string name="c_p1h">Percent change 1h</string>
+    <string name="c_p24h">Percent change 24h</string>
+    <string name="c_p7d">Percent change 7d</string>
+
+    <string name="no_internet">No internet connection.</string>
+    <string name="no_currencies">No currencies to show.</string>
+
+    <string name="title">Details</string>
+</resources>
