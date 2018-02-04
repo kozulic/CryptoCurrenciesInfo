@@ -1,6 +1,7 @@
 package com.cryptocurrenciesinfo;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,23 +43,28 @@ public class DetailsActivity extends AppCompatActivity {
         perc1TextView = (TextView) findViewById(R.id.c_perc_1h);
         if(cryptoCurr.getPc1() > 0) {
             perc1TextView.setText("+" + Double.toString(cryptoCurr.getPc1()) + "%");
-            //perc1TextView.setTextColor(ContextCompat.getColor(getContext(), R.color.asc_clr));
+            perc1TextView.setTextColor(Color.parseColor("#4CAF50"));
         } else {
             perc1TextView.setText(Double.toString(cryptoCurr.getPc1()) + "%");
+            perc1TextView.setTextColor(Color.parseColor("#F44336"));
         }
 
         perc24TextView = (TextView) findViewById(R.id.c_perc_24h);
         if(cryptoCurr.getPc24() > 0) {
             perc24TextView.setText("+" + Double.toString(cryptoCurr.getPc24()) + "%");
+            perc24TextView.setTextColor(Color.parseColor("#4CAF50"));
         } else {
             perc24TextView.setText(Double.toString(cryptoCurr.getPc24()) + "%");
+            perc24TextView.setTextColor(Color.parseColor("#F44336"));
         }
 
         perc7TextView = (TextView) findViewById(R.id.c_perc_7d);
         if(cryptoCurr.getPcw() > 0) {
             perc7TextView.setText("+" + Double.toString(cryptoCurr.getPcw()) + "%");
+            perc7TextView.setTextColor(Color.parseColor("#4CAF50"));
         } else {
             perc7TextView.setText(Double.toString(cryptoCurr.getPcw()) + "%");
+            perc7TextView.setTextColor(Color.parseColor("#F44336"));
         }
 
     }
